@@ -40,9 +40,9 @@ class CPU
 
         void UpdateCurrentCycle(std::uint8_t offset); // add cycle offset
 
-        uint16_t getProgramCounter() const; 
+        ADDRESS getProgramCounter() const; 
 
-        uint16_t getStackPointerAddress() const; // Stack pointer address from RAM
+        ADDRESS getStackPointerAddress() const; // Stack pointer address from RAM
  
 
         uint64_t getCycleIndex() const; // current cycle index
